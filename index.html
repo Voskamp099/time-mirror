@@ -92,8 +92,8 @@
         border:1px dashed var(--line);border-radius:14px;padding:12px 14px;margin-top:4px}
   .note a{color:var(--gold-deep)}
   .empty{font-size:12.5px;color:var(--gold-soft);text-align:center;padding:22px 0}
-  .fadein{animation:fade .5s ease both}
-  @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+  .fadein{animation:fade .5s ease forwards}
+  @keyframes fade{from{opacity:.35;transform:translateY(6px)}to{opacity:1;transform:none}}
   @media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
 </style>
 </head>
@@ -447,10 +447,12 @@
 
   /* ---------- 粒子背景 ---------- */
 
-  var canvas = document.getElementById("particles"), ctx = canvas.getContext("2d"), parts = [];
+  var canvas = document.getElementById("particles"), ctx = null, parts = [];
+  try { ctx = canvas.getContext("2d"); } catch(e){ ctx = null; }
   function sizeCanvas(){ canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
   function seedParticles(){ parts = []; for(var i=0;i<34;i++) parts.push({x:Math.random()*window.innerWidth,y:Math.random()*window.innerHeight,r:1+Math.random()*2,vx:(Math.random()-.5)*.16,vy:-0.05-Math.random()*.12,a:.15+Math.random()*.45}); }
   function draw(){
+    if(!ctx) return;
     ctx.clearRect(0,0,canvas.width,canvas.height);
     for(var i=0;i<parts.length;i++){
       var p = parts[i];
