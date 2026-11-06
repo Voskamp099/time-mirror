@@ -11,6 +11,11 @@ The demo folder in this repository is a self-contained static build of the produ
 page needs no server and no model call; the real application below streams its answers from a
 large language model.
 
+The demo is published at two paths, serving the same file: `/time-mirror-demo/` on the notebook
+site (the canonical one) and `/time-mirror/` from this repository's own Pages branch. The source
+is `demo/index.html`; the notebook site keeps a copy at `time-mirror-demo/index.html`, so change
+both when the demo changes.
+
 ## The product
 
 | Screen | What it does |
