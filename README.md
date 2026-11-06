@@ -4,7 +4,9 @@ Time Mirror is a full-stack web app that builds a **digital twin** of a child fr
 parent feeds it. Every memory becomes a point of light; the twin grows as the collection grows,
 and when you talk to it, the answers come back from those memories — never from invention.
 
-**Live demo (static, opens in any browser):** <https://voskamp099.github.io/time-mirror-demo/>
+**Live app (the full version — seed boot animation, real AI chat):** <https://coding-lady-hackathon.vercel.app/>
+
+**Static demo (self-contained, opens in any browser):** <https://voskamp099.github.io/time-mirror-demo/>
 
 The demo folder in this repository is a self-contained static build of the product loop
 (feed → grow → talk). Its chat replies are composed locally from retrieved memories so the
