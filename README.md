@@ -57,7 +57,7 @@ is a confident invention about a real child:
 
 This is an AI-native build: the product spec, the visual language and the implementation were
 produced and iterated with AI coding tools (an AI agent workspace plus terminal coding agents),
-and the design decisions were kept in `DESIGN.md` and `AGENTS.md` so that every later change
+and the design decisions were kept in `docs/DESIGN.md` and `docs/AGENTS.md` so that every later change
 stayed consistent with the same rules — warm palette, rounded shapes, no cold blues, slow
 animations, no data tables where a memory should feel like a memory.
 
@@ -84,8 +84,8 @@ demo/index.html     static interactive demo (no server, no dependencies)
 src/app             Next.js application: onboarding, feed, mirror, growth, chat
 src/app/api/chat    streaming chat endpoint and the persona prompt
 src/lib             memory store and data model types
-DESIGN.md           visual language and product rules
-AGENTS.md           page map, stack, and structure notes for AI agents
+docs/DESIGN.md       visual language and product rules
+docs/AGENTS.md       page map, stack, and structure notes for AI agents
 ```
 
 ## Notes

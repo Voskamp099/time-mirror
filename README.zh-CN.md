@@ -51,7 +51,7 @@ Pages 分支上的 `/time-mirror/`。源文件是 `demo/index.html`；笔记站�
 ## 怎么构建出来的
 
 这是一次 AI Native 的开发：产品设定、视觉语言与实现由 AI 编码工具（AI 智能体工作区 + 终端编码 agent）
-产出并迭代，设计决策留在 `DESIGN.md` 与 `AGENTS.md`，让后续每次改动都遵守同一套规则——暖色系、圆角、
+产出并迭代，设计决策留在 `docs/DESIGN.md` 与 `docs/AGENTS.md`，让后续每次改动都遵守同一套规则——暖色系、圆角、
 不用冷蓝、动画要慢、回忆不该用数据表格呈现。
 
 ## 跑完整应用
@@ -73,8 +73,8 @@ demo/index.html     静态交互演示（无服务器、无依赖）
 src/app             Next.js 应用：引导 / 投喂 / 镜像 / 成长 / 对话
 src/app/api/chat    流式对话接口与人格提示词
 src/lib             记忆存储与数据模型类型
-DESIGN.md           视觉语言与产品规则
-AGENTS.md           页面地图、技术栈与结构说明
+docs/DESIGN.md       视觉语言与产品规则
+docs/AGENTS.md       页面地图、技术栈与结构说明
 ```
 
 ## 说明

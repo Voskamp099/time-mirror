@@ -47,8 +47,8 @@
 │       ├── utils.ts             # shadcn 工具函数
 │       ├── store.ts             # localStorage 数据管理
 │       └── excel-utils.ts       # Excel 模板生成与解析工具
-├── DESIGN.md                    # 设计规范
-├── AGENTS.md                     # 本文件
+├── DESIGN.md                    # 设计规范（同目录）
+├── AGENTS.md                     # 本文件（同目录）
 └── package.json
 ```
 
